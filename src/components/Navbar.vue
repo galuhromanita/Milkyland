@@ -1,23 +1,57 @@
 <template>
   <nav
-    class="w-full bg-white px-10 py-5 shadow-sm flex justify-between items-center"
+    :class="[
+      'absolute top-0 left-0 w-full px-10 py-5 flex justify-between items-center z-50 transition-all duration-300',
+      $attrs.class,
+    ]"
+    style="font-family: 'Alexandria'"
   >
-    <!-- Logo -->
     <div class="flex items-center gap-3 font-bold">
-      <img src="/public/logo.png" alt="logo" class="w-[100px] h-[50px]" />
+      <img
+        src="/src/assets/img/logo.png"
+        alt="logo"
+        class="w-[150px] h-[80px]"
+      />
     </div>
 
-    <!-- Menu -->
-    <ul class="flex gap-10 text-gray-700 font-medium">
+    <!-- Navigation -->
+    <ul class="flex gap-2 text-[#0E3F25] font-bold text-lg">
       <li>
-        <router-link to="/" class="hover:text-blue-600 duration-200"
-          >Home</router-link
+        <router-link
+          to="/"
+          exact
+          class="px-5 py-1 rounded-full transition-all duration-300 ease-in-out"
+          exact-active-class="bg-white shadow-md"
         >
+          Home
+        </router-link>
       </li>
+
+      <li>
+        <router-link
+          to="/about"
+          class="px-5 py-1 rounded-full transition-all duration-300 ease-in-out"
+          exact-active-class="bg-white shadow-md"
+        >
+          About
+        </router-link>
+      </li>
+
+      <li>
+        <router-link
+          to="/product"
+          class="px-5 py-1 rounded-full transition-all duration-300 ease-in-out"
+          exact-active-class="bg-white shadow-md"
+        >
+          Products
+        </router-link>
+      </li>
+
       <li>
         <router-link
           to="/contact"
-          class="px-4 py-1 rounded-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white duration-200"
+          class="px-5 py-1 rounded-full transition-all duration-300 ease-in-out"
+          exact-active-class="bg-white shadow-md"
         >
           Contact Us
         </router-link>
