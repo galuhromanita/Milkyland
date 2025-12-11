@@ -1,4 +1,4 @@
-# praktikum5
+# MILKY LAND
 
 This template should help get you started developing with Vue 3 in Vite.
 
