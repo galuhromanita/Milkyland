@@ -1,12 +1,9 @@
-<script setup>
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-</script>
-
 <template>
-  <footer class="bg-[#9AA6B2] py-10 px-20 text-gray-700 text-sm">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
+  <footer class="bg-[#9AA6B2] py-10 px-6 md:px-20 text-gray-700 text-sm">
+    <div
+      class="max-w-6xl mx-auto flex flex-col md:flex-row md:justify-between items-center gap-4 text-center md:text-left"
+    >
+      <!-- Logo -->
       <span
         class="text-xl"
         style="font-family: 'Courgette', cursive; color: #0e3f25"
@@ -14,6 +11,7 @@ function scrollToTop() {
         MILKY LAND
       </span>
 
+      <!-- Phone -->
       <span
         class="flex items-center gap-3 text-base"
         style="font-family: sans-serif; color: black"

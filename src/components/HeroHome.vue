@@ -1,24 +1,22 @@
 <template>
   <section
-    class="relative w-full h-[100vh] bg-cover bg-center flex items-center -mt-[0px]"
+    class="relative w-full min-h-screen bg-cover bg-center flex items-center -mt-[0px]"
     style="background-image: url('/src/assets/img/bghero.jpg')"
   >
-    <!-- Overlay terang -->
     <div class="absolute inset-0 bg-white/45"></div>
 
-    <!-- Teks hero -->
     <div
       class="relative z-10 px-6 lg:px-20 text-center text-white max-w-5xl mx-auto"
     >
       <h1
-        class="text-6xl md:text-7xl font-extrabold leading-[1.0] style-home mb-[-10px]"
+        class="text-6xl md:text-7xl font-extrabold leading-[1.0] text-[#415973] drop-shadow-[-2px_-2px_0_white] drop-shadow-[2px_-2px_0_white] drop-shadow-[-2px_2px_0_white] drop-shadow-[2px_2px_0_white]"
         style="font-family: 'Alexandria'"
       >
         Fresh Milk
       </h1>
 
       <h1
-        class="text-6xl md:text-7xl font-extrabold leading-[1.0] style-home"
+        class="text-6xl md:text-7xl font-extrabold leading-[1.0] text-[#415973] drop-shadow-[-2px_-2px_0_white] drop-shadow-[2px_-2px_0_white] drop-shadow-[-2px_2px_0_white] drop-shadow-[2px_2px_0_white]"
         style="font-family: 'Alexandria'"
       >
         Fun Flavors!

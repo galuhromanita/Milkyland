@@ -1,9 +1,13 @@
 <script setup>
 import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer.vue";
+import ContentProducts from "@/components/ContentProducts.vue";
+import ProdukMade from "@/components/ProdukMade.vue";
+import ProductSave from "@/components/ProductSave.vue";
 </script>
 
 <template>
   <Navbar />
-  <Footer />
+  <ContentProducts />
+  <ProdukMade />
+  <ProductSave />
 </template>

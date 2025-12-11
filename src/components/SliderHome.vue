@@ -1,24 +1,26 @@
 <template>
   <div class="w-full overflow-hidden py-10 bg-white">
-    <div class="slider-track gap-40">
-      <!-- LOOP 1 -->
+    <div class="flex w-max animate-infinite-slide gap-40">
+      <!-- loop pertama -->
       <div
-        v-for="(item, index) in items"
-        :key="'a' + index"
-        class="slider-card"
+        v-for="item in items"
+        class="bg-[#d9eafd] p-6 rounded-xl w-[200px] h-[180px] flex flex-col items-center text-center shadow-md"
       >
-        <img :src="item.icon" />
-        <p>{{ item.title }}</p>
+        <img :src="item.icon" class="w-16 h-[70px]" />
+        <p class="text-black font-semibold text-[19px] mt-5 leading-tight">
+          {{ item.title }}
+        </p>
       </div>
 
-      <!-- LOOP 2 (duplikasi untuk infinite) -->
+      <!-- loop kedua -->
       <div
-        v-for="(item, index) in items"
-        :key="'b' + index"
-        class="slider-card"
+        v-for="item in items"
+        class="bg-[#d9eafd] p-6 rounded-xl w-[200px] h-[180px] flex flex-col items-center text-center shadow-md"
       >
-        <img :src="item.icon" />
-        <p>{{ item.title }}</p>
+        <img :src="item.icon" class="w-16 h-[70px]" />
+        <p class="text-black font-semibold text-[19px] mt-5 leading-tight">
+          {{ item.title }}
+        </p>
       </div>
     </div>
   </div>
