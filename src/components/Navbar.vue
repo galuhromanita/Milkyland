@@ -70,6 +70,7 @@ const links = [
   { label: "About", to: "/about" },
   { label: "Products", to: "/product" },
   { label: "Contact Us", to: "/contact" },
+  { label: "AboutMe", to: "/about-me" },
 ];
 
 function handleScroll() {

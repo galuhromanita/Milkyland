@@ -8,6 +8,7 @@ import ProductChocolate from "@/pages/ProductChocolate.vue";
 import ProductCaramel from "@/pages/ProductCaramel.vue";
 import ProductTaro from "@/pages/ProductTaro.vue";
 import ProductMocca from "@/pages/ProductMocca.vue";
+import AboutMe from "@/pages/AboutMe.vue";
 
 const routes = [
   {
@@ -62,6 +63,12 @@ const routes = [
     path: "/contact",
     name: "Contact",
     component: Contact,
+  },
+
+  {
+    path: "/about-me",
+    name: "AboutMe",
+    component: AboutMe,
   },
 ];
 

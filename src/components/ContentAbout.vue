@@ -21,7 +21,7 @@
 
         <p
           class="text-[18px] md:text-[22px] lg:text-[27px] leading-relaxed text-[#0e3f65]"
-          style="font-family: 'Alexandria';"
+          style="font-family: 'Alexandria'"
         >
           MilkyLand adalah kampanye digital dari Ultra Milk untuk memperkenalkan
           kelezatan dan kesegaran varian rasa susu UHT, melalui tampilan visual

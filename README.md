@@ -1,19 +1,26 @@
-# praktikum5
+# MILKYLAND
+
+COTS DESAIN WEB
+
+1. Menambahkan pages "AboutMe" yang di import yaitu "Navbar" dan "ContentAboutMe" karena "Footer" sudah masuk semua di App.vue
+2. Menambahkan components "ContentAboutMe"
+3. Menambahkan import dan path di router index.js "import AboutMe from "@/pages/AboutMe.vue"; dan
+   " {
+   path: "/about-me",
+   name: "AboutMe",
+   component: AboutMe,
+   },
+4. Menambahkan const link di file Navbar.vue untuk diarahkan ke halaman AboutMe
+   const links = [
+   { label: "Home", to: "/" },
+   { label: "About", to: "/about" },
+   { label: "Products", to: "/product" },
+   { label: "Contact Us", to: "/contact" },
+   { label: "AboutMe", to: "/about-me" },
+   ];
+5. Cara mengaksesnya lewat "http://localhost:5173/about-me"
 
 This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Recommended Browser Setup
-
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
 ## Customize configuration
 
